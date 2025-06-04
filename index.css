@@ -1,0 +1,136 @@
+/* CSS Reset Rule */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Landing Page Styling */
+
+.landing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+}
+
+.landing-text {
+    max-width: 500px;
+}
+
+.landing-text h1 {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+.landing-text p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.btn-shop-now {
+    font-family: Poppins;
+    font-weight: 500;
+    background-color: #F97A00;
+    border: none;
+    font-size: 1.25rem;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+.btn-shop-now:hover {
+    background-color: #16610E;
+    color: white;
+    cursor: pointer;
+}
+
+/*********************************************************************************************************/
+
+/* Popular Categories Styling */
+
+#categories {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.category {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.category img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.category p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .category-container {
+        gap: 15px;
+    }
+
+    .category {
+        width: 80px;
+    }
+
+    .category img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .category p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .category img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .category p {
+        font-size: 14px;
+    }
+}
+
+
+
+
